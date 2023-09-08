@@ -1,4 +1,5 @@
-//Descripción del circuito simple de la fig 3-37 del libro Morris Mano
+//Libro Morris Mano pag 101
+//Descripción del circuito simple de la fig 3-37
 
 module circuito_simple ();
 input A,B,C;
