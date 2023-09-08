@@ -11,6 +11,7 @@ output x,y;
 endmodule
 
 
+//circtuio simple parametizables
 module circuito_simple_con_retardo (A,B,C,x,y);
 input A,B,C;
 output x,y;
