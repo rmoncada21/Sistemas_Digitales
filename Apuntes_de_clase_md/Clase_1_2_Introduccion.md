@@ -1,29 +1,30 @@
+
 # Temas Importantes 
 De que trata el curso
 
-- Programación y diseño digital
-- Usar system verilog de manera correcta, no solamente para diseño digital sino para hacer verificación
-- Conocimientos previos:
+  - Programación y diseño digital
+  - Usar system verilog de manera correcta, no solamente para diseño digital sino para hacer verificación
+  - Conocimientos previos:
 
 ![Imagen](img/Conocimientos_previos.png)
 
 
 Ver presentación
 
-## Complicaciones de la verificación
+## 1. Complicaciones de la verificación
 
-Pensar el varios posibles escenarios donde el programa falle.
-Especificaciones ambiguas
+- Pensar el varios posibles escenarios donde el programa falle.
+- Especificaciones ambiguas
 
-## Diseño de Verificación e Integración
+## 2. Diseño de Verificación e Integración
 Se puede hacer veriificación a distintos niveles del sistemas:
 - NIvel de sistema
 - Nivel de chip
 - Nivel de unidad 
 - Nivel de disñeador
 
-## Proceso de diseño de un circuito Integrado 
-**La verificación del curso se basa en:**
+## 3. Proceso de diseño de un circuito Integrado 
+### La verificación del curso se basa en:
 - Requerimientos del cliente
 - Modelado algoritmico y simulación:
   Como el diseño de a arquitectura a nivel de algoritmo. 
@@ -43,27 +44,30 @@ Se puede hacer veriificación a distintos niveles del sistemas:
   kadem sinopsis y mentor graphics
 
 
-## DIFERENTES ESTILOS DE VERIFICACIÓN
+## 4. DIFERENTES ESTILOS DE VERIFICACIÓN
 
-- Verificación o validación funcional:
+### 4.1 Verificación o validación funcional:
   
-En esto se enfoca el curso. Se toma la representación del modelo evaludado a nivel rtl o 
+- En esto se enfoca el curso. Se toma la representación del modelo evaludado a nivel rtl o 
 arquitetucra,... y se le da vectores de estimunlos y se ve los vectores de salida
-Casos de esquina (VLSI), es imposible cubrir todos los casos de posible 
+
+
+- **Casos de esquina (VLSI)**, es imposible cubrir todos los casos de posible 
 error. Casos mas posibles ddonde llegue a fallar el diseño 
 En la verificación se verifica que el diseño cumpla con los requisitos. Que 
 no este defectuoso.
 
-- Verficación formal:
+### 4.2 Verficación formal:
   
-  Hace los mismo que la V. Funcional con la diferencia que se usan modelos 
+- Hace los mismo que la V. Funcional con la diferencia que se usan modelos 
 matematicos. 
 
 
-- Verificación TEST ("Testing")
+### 4.3 Verificación TEST ("Testing")
 
 
-Flujo Genérico de Verificación de diseño
+### 4.4 Flujo Genérico de Verificación de diseño
+
 1. Modelado de arquitectura
    - Especificaciones de arqiuitectura
 2. Plan de verificación funcional

@@ -1,4 +1,5 @@
-# Repasar Disseño Digital en Verilog y System Verilog
+# Repasar Diseño Digital en Verilog y System Verilog
+>NOTA: Para ver compilación y comando de verilog ver archivos **comando_de_compilacion en DocsHubs**
 - Maquinas de estado
 - Diseñar logica combinal 
 - Hacer diseño Gerarquico
@@ -23,77 +24,48 @@ Lista de recursos, interfaces, prueba, protoccolos que se van a necesitar para p
 - Lógica combinacional
 - Mapas K  
 
-Señal mixta: 
-Digital-analógico.
-
-Veriloga: parecido a hdl, describe ciruitos analógicos
-Verilogams: señal mixta, permite simular circuitos digitales como analógicos
+- Señal mixta: Digital-analógico.
+- Veriloga: parecido a hdl, describe ciruitos analógicos
+- Verilogams: señal mixta, permite simular circuitos digitales como analógicos
 
 - Polimorfismo: 
   Crear funciones con diferentes tipos de manera de datos. Ejemplo crear un clase que trabaje con datos enteros, flotantes
 - Herencia:
   Las clases heredan atributos de otras clases
 
-## Repaso de Verilog (parte sintetizable)
-"Sintaxis de lenguaje sintetizable
+## 2 Repaso de Verilog (parte sintetizable)
+
+### 2.1 Sintaxis de lenguaje sintetizable
 
 Comandos - Variables:
-**reg:** 	 registro y almacena un valor - se sintetizan como flops o latches normmales
-**wire**:  cable, permite la conexión - también sirven para conectar dos modulos
-**tri**: 	 variables de tercer estado 
-**logic**: permite al compilador inferir el tipo de la variable
+- **reg:** 	 registro y almacena un valor - se sintetizan como flops o latches normmales
+- **wire**:  cable, permite la conexión - también sirven para conectar dos modulos
+- **tri**: 	 variables de tercer estado 
+- **logic**: permite al compilador inferir el tipo de la variable
 Se pueden usar enteros, flotantes , pero no son sintetizables
 
 Declaración 
-**Tipo [msb:lsb] nombre**:   (menos significativo, mas significativo)
-**wire [31:0] BID**:
+- **Tipo [msb:lsb] nombre**:   (menos significativo, mas significativo)
+- **wire [31:0] BID**:
 
 Declaración de un módulo 
-**-module Nombre (Entrada, Salida)  #parametros**:
+- **-module Nombre (Entrada, Salida)  #parametros**:
 
 Declaración de puertos
-**-input Entrada **:
-**-output Salida **: 
+- -input Entrada :
+- -output Salida : 
 
 Instancias
-Original Copia (Puertos);
+- Original Copia (Puertos);
 
-Procesos-> como funciones
-always @ (ListaDeSensibilidad) begin
+- Procesos-> como funciones
+- always @ (ListaDeSensibilidad) begin
 
-código
-end
+### 2.2 Implementación de Circuitos Combinacionales
+- Ver la presentación_02Intro Verilog
 
-endmodule
+### 2.3 Implementación de Circuitos Secuenciales
+- Ver la presentación_02Intro Verilog
 
-"Implementación de Circuitos Combinacionales
-Ver la presentación_02Intro Verilog
-
-"Implementación de Circuitos Secuenciales
-Ver la presentación_02Intro Verilog
-
-"Genvar y Generate r Icarus Verilog
-Ver la presentación_02Intro Verilog
-
-
-"Icarus Verilog 
-//Instalación icarus/gtkwave fedora
-sudo dnf install iverilog
-sudo dnf install gtkwave
-
-//manual de icarus-verilog/gtkwave en la terminal 
-man iverilog 
-man gtlwave
-
-//Compilación de un programa de verilog con icarus
-iverilog -g2012 -o nombre_ejecutable -W all nombre_archivo.v > log
-iverilog -g2012 -o salida -W all Test_fifo.v > log
-
->log immprime los warnings en archivo llmado log
-
-//Comandos para el uso del programa 
-gtkwave vcd_file.vcd
-gtkwave nombre_archivo.vcd
-
-
-"Clase: en el servidor moverse en la carpeta de
+### 2.4 Genvar y Generate r Icarus Verilog
+- Ver la presentación_02Intro Verilog
