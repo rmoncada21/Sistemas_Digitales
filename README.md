@@ -1,8 +1,22 @@
 # VerilogHDL
 Ejercicios y práctica de Verilog HDL
 
-Otras herramientas ademas de **icarus**
+Estructura común en un proyecto de sistemas digitales:
+~~~
+        proyecto_verilog/
+        |-- rtl/                # Código fuente RTL (Register-Transfer Level)
+        |   |-- modulos/       # Módulos del diseño
+        |   |-- top_modulo.v   # Módulo de nivel superior
+        |-- tb/                 # Bancos de prueba (Testbenches)
+        |   |-- test_modulo.v  # Bancos de prueba para los módulos
+        |-- scripts/            # Scripts útiles para la simulación o síntesis
+        |-- sim/                # Archivos y resultados de simulación
+        |-- syn/                # Archivos y resultados de síntesis
+        |-- docs/               # Documentación del proyecto
+        |-- README.md           # Documentación principal del proyecto
 
+~~~
+Otras herramientas ademas de **icarus**
 ## 1 **Verilator:**
 Verilator es una herramienta de simulación de hardware de código abierto y rápida. A diferencia de las herramientas de simulación tradicionales que interpretan el código Verilog, Verilator realiza una compilación previa (síntesis lógica y simulación) para lograr una simulación más rápida. Es especialmente útil para proyectos grandes y complejos donde la velocidad de simulación es crucial.
 
