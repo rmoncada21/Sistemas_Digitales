@@ -30,4 +30,8 @@ run: $(EXE_TESTBENCHES)
 clean:
 	rm -f $(EXE_MODULES) $(EXE_TESTBENCHES)
 
+gitignore: 
+	echo "$(EXE_MODULES)" > .gitignore
+	echo "$(EXE_TESTBENCHES)" >> .gitignore
+
 .PHONY: all modules $(EXE_TESTBENCHES $(EXE_MODULES)) run clean
