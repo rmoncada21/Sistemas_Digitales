@@ -1,4 +1,5 @@
 IVE = iverilog
+VERSION = -g2012
 VVP = vvp
 VFLAGS = -Wall
 SOURCES = $(wildcard *.v)
@@ -14,15 +15,15 @@ all: modules $(EXE_TESTBENCHES)
 modules: $(EXE_MODULES)
 # testbenches: $(EXE_TESTBENCHES)
 %:%.v
-	$(IVE) $(VFLAGS) -o $@ $<
+	$(IVE) $(VFLAGS) $(VERSION) -o $@ $<
 
 # funciona para compilar las dependercias del testbench
 $(EXE_TESTBENCHES): $(MODULE_FROM_TESTBENCH) $(TESTBENCHES)
-	$(IVE) -o $@ $(VFLAGS) $^
+	$(IVE) $(VERSION) -o $@ $(VFLAGS) $^
 
 # reglar para imprimir los modulos por separado
 $(EXE_MODULES): $(MODULES)
-	$(IVE) -o $@ $(VFLAGS) $^
+	$(IVE) $(VERSION) -o $@ $(VFLAGS) $^
 
 run: $(EXE_TESTBENCHES)
 	$(VVP) $(EXE_TESTBENCHES)
@@ -34,4 +35,13 @@ gitignore:
 	echo "$(EXE_MODULES)" > .gitignore
 	echo "$(EXE_TESTBENCHES)" >> .gitignore
 
-.PHONY: all modules $(EXE_TESTBENCHES $(EXE_MODULES)) run clean
+help:
+	@echo make all 
+	@echo make modules
+	@echo make testbench_nombre_modulo.v
+	@echo make nombre_modulo.v
+	@echo make run "run a executable"
+	@echo make clean
+	@echo make gitignore
+
+.PHONY: all modules $(EXE_TESTBENCHES $(EXE_MODULES)) run clean help

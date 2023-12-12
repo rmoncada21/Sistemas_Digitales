@@ -11,4 +11,4 @@ module circuito_simple(A,B,C,x,y);
     not g2(y,C);
     or g3(x,e,y);
 
-endmodule    
+endmodule
