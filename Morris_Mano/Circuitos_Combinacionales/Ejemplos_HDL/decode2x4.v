@@ -1,0 +1,1 @@
+// Descripción a nivel de compuertas de un decodificador 2 a 4 de la figura
