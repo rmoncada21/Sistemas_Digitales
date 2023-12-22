@@ -1,3 +1,4 @@
+// Ejemplo HDL 4.3
 // Descripción de flujo de datos del decodificador de 2 a 4
 
 module decode2x4 (A,B,E,D);

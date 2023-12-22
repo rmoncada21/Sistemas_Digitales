@@ -1,3 +1,4 @@
+// Ejemplo HDL 4.4
 //  Descripcion de flujo de datos de un sumador de 4 bits
 
 module binary_adder (A, B, Cin, SUM, Cout);

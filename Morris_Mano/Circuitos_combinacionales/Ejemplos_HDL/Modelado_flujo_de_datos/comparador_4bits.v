@@ -1,3 +1,4 @@
+// Ejemplo HDL 4.5
 // Descripción de flujo de datos de un comparador de 4 bits
 
 module comparador4bits (A, B, ALTB, AGTB, AEQB);

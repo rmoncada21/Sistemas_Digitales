@@ -1,3 +1,4 @@
+// Ejemplo HDL 4.2.1
 // Descripcion HDL usando el tipo de datos "tri" para la salida
 module tri_mux2x1 (A,B,select,OUT);
     input A, B, select;
