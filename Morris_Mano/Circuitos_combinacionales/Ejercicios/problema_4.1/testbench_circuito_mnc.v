@@ -31,7 +31,7 @@ module testbench_circuito;
         valores_F1F2[1]  = 2'b11;
         valores_F1F2[2]  = 2'b10;
         valores_F1F2[3]  = 2'b11;
-        valores_F1F2[4]  = 2'b10;
+        valores_F1F2[4]  = 2'b11;
         valores_F1F2[5]  = 2'b01;
         valores_F1F2[6]  = 2'b11;
         valores_F1F2[7]  = 2'b01;
@@ -56,7 +56,7 @@ module testbench_circuito;
             // Evaluar el circuito
             #10; // Esperar un tiempo para que los cambios se propaguen
             if ((valores_F1F2[test_num][1] == F1) && (valores_F1F2[test_num][0] == F2)) begin
-                $display("Caso de prueba: %d correcto", test_num);
+                // $display("Caso de prueba: %d correcto", test_num);
             end else begin
                 $display("Error en la Prueba: %d F1 = %b F2 = %b", test_num, F1, F2);
                 // $fatal;
