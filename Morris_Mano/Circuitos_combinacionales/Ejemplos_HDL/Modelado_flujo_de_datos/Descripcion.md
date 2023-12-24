@@ -104,31 +104,3 @@ module testbench_mux2x1;
         $monitor("select = %b A = %b B = %b OUT = %b time = %0d", TS, TA, TB, TY, $time);
 endmodule
 ~~~
-
-## Ejemplo 4.10 Circuito de análisis
-![Imagen](img/ejemplo_analisis.png)
-
-~~~verilog
-module test_circuit;
-    reg [2:0]D;
-    wire F1,F2;
-    circuito_analisis dut(D[2],D[1],D[0],F1,F2);
-    
-    initial
-        begin
-        D = 3'b000;
-        repeat(7)
-        #10 D = D + 1'b1;
-    end
-    initial
-        $monitor ("ABC = %b F1 = %b F2 =%b ",D, F1, F2);
-endmodule
-~~~
-
-- Las entradas oara estimular el circuito se especifican con un vector reg de tres bits llamda D.
-D[2]: equivale a la entrada A. 
-D[1]: a la entrada B
-D[0]: a la entrada C
-
-- Las salidas F1 Y F2 se declaran **wire**
-- El ciclo repeat proporciona los 7 numeros binario que siguen a 000 para la tabla de verdad.

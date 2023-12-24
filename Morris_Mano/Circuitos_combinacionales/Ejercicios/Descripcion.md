@@ -1,5 +1,9 @@
 # Problemas pag 161
 
+MC:  Modelado por comportamiento
+MNC: Modelado nivel de compuertas
+MFD: Modelado de flujo de datos
+
 ## 4.1 Considere el circuito combinacional de la figura P4-1.
 
 - a) Deduzca las expresiones booleanas para T1 a T4. Evalúe las salidas F1 y F2 en función de las
