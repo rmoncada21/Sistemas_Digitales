@@ -79,3 +79,22 @@ Cada enfoque tiene sus propias ventajas y desventajas, y la elección depende de
 2. **Reutilización de Código:** Los enfoques de comportamiento y flujo de datos suelen favorecer la reutilización de código, mientras que el modelado por compuertas lógicas puede ser más específico para un diseño particular.
 
 En muchos casos, los diseñadores eligen un enfoque que equilibre la claridad, la flexibilidad y el control sobre la implementación física según las necesidades específicas del proyecto. Es común encontrar diseños que combinan elementos de los tres enfoques para aprovechar las fortalezas de cada uno.
+
+El enfoque más idóneo para sintetizar hardware depende de varios factores, incluidas las necesidades específicas del diseño, la complejidad del proyecto y las preferencias del diseñador. Aquí hay algunas consideraciones para ayudarte a tomar una decisión:
+
+### Factores a Considerar a la hora de diseñar:
+1. **Nivel de Abstracción Deseado:**
+   - Modelar a un nivel de abstracción alto (comportamiento o flujo de datos) es preferible cuando la claridad y la flexibilidad son cruciales.
+   - Modelar a un nivel de abstracción bajo (compuertas lógicas) es preferible cuando se necesita un control preciso sobre la implementación física.
+
+2. **Optimizaciones Específicas de Herramientas de Síntesis:**
+   - Algunas herramientas de síntesis pueden realizar optimizaciones específicas según el estilo de modelado utilizado. Es importante comprender cómo una herramienta específica interpreta y optimiza el código Verilog.
+
+3. **Complejidad del Diseño:**
+   - Para diseños más simples, el modelado por comportamiento o flujo de datos puede ser adecuado y más fácil de desarrollar.
+   - Para diseños complejos que requieren una optimización precisa, el modelado por compuertas lógicas puede ser más apropiado.
+
+4. **Reutilización de Código:**
+   - Si la reutilización de código es una prioridad, los enfoques de comportamiento y flujo de datos suelen ser más favorables.
+
+En la práctica, es común utilizar una combinación de estos enfoques en diferentes partes de un diseño para aprovechar las fortalezas de cada uno. Algunos diseñadores comienzan con un modelado de alto nivel y, a medida que se refina el diseño, pueden utilizar enfoques más detallados en áreas críticas para la eficiencia del hardware.
