@@ -1,4 +1,4 @@
-testbench_circuito_nosimp_mnc
+Tabla de verdad de referencia
 A B C D| F G
 0 0 0 0| 0 1
 0 0 0 1| 1 0
@@ -16,4 +16,4 @@ A B C D| F G
 1 1 0 1| 0 0
 1 1 1 0| 1 1
 1 1 1 1| 1 1
-testbench_circuito_nosimp_mnc.v:30: $finish called at 160 (1s)
+testbench_circuito_simp_mfd.v:26: $finish called at 160 (1s)
