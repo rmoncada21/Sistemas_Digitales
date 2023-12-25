@@ -14,7 +14,7 @@ module testbench_circuito_simp_mfd;
 
     task gen_table;
         reg [3:0] in_task;
-        $display("testbench_circuito_simp_mnc");
+        $display("testbench_circuito_simp_mfd");
         $display("A B C D| F G");
 
         for (int i=0; i<=15; i++) begin 

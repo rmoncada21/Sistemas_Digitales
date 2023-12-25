@@ -1,0 +1,19 @@
+testbench_circuito_nosimp_mnc
+A B C D| F G
+0 0 0 0| 0 1
+0 0 0 1| 1 0
+0 0 1 0| 0 1
+0 0 1 1| 1 0
+0 1 0 0| 0 1
+0 1 0 1| 1 0
+0 1 1 0| 0 1
+0 1 1 1| 1 0
+1 0 0 0| 0 0
+1 0 0 1| 0 0
+1 0 1 0| 0 0
+1 0 1 1| 0 0
+1 1 0 0| 0 0
+1 1 0 1| 0 0
+1 1 1 0| 1 1
+1 1 1 1| 1 1
+testbench_circuito_nosimp_mnc.v:30: $finish called at 160 (1s)
