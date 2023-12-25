@@ -63,10 +63,10 @@ Especifica que la salida OUT = A, si select=1, caso contrario OUT =  o sea selec
 
 ~~~ verilog
 module multiplexor2x1(A, B, select, OUT);
-    input A, B, selecct;
+    input A, B, select;
     output OUT;
     
-    assign OUT = selecct ? A:B;
+    assign OUT = select ? A:B;
     
 endmodule
 ~~~
