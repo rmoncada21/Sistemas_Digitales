@@ -15,4 +15,14 @@ cuatro entradas.
 
 ![Img](img/1.png)
 
-## 4.2 
+## 4.2 Obtenga las expresiones booleanas simplificadas para las salidas F y G en términos de las variables de entrada del circuito de la figura P4-2.
+
+![Img](img/2.png)
+
+### Funciones del circuito:
+- F = (A'D+A)(A'+BC)
+- G = (A'+BC)(D´+A)
+
+### Funciones simplificadas con propiedades del algebra booleana:
+- F = A'D + BC + ABC
+- G = A'D + BCD' +ABC
