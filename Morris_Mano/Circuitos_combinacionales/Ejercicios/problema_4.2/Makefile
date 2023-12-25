@@ -38,31 +38,18 @@ runt: $(EXE_TESTBENCHES)
 # 	$(VVP) $(BIN_FOLDER)/$^
 # $(foreach file_in_bin, $(EXE_TESTBENCHES), $(VVP) $(BIN_FOLDER)/$(file_in_bin) > $(TEST_FOLDER)/referencia0000.txt; echo "";)
 	$(foreach file_in_bin, $(EXE_TESTBENCHES), $(VVP) $(BIN_FOLDER)/$(file_in_bin); echo "";)
-	$(foreach file_in_bin, $(EXE_TESTBENCHES), $(VVP) $(BIN_FOLDER)/$(file_in_bin) > $(TEST_FOLDER)/$(file_in_bin:=_output.txt); echo "";)
+# $(foreach file_in_bin, $(EXE_TESTBENCHES), $(VVP) $(BIN_FOLDER)/$(file_in_bin) > $(TEST_FOLDER)/$(file_in_bin:=_output.txt); echo "";)
 
 
 runm: $(EXE_MODULES)
 # 	$(VVP) $(BIN_FOLDER)/$<
 	$(foreach file_in_bin, $(EXE_MODULES), $(VVP) $(BIN_FOLDER)/$(file_in_bin); echo "";)
 
-
-# icdiff <(vvp bin/testbench_circuito_simp_mfd < test/input.txt) test/output.txt 
-# icdiff <(vvp bin/testbench_circuito_simp_mfd) test/output.txt
-# $(foreach file_in_bin, $(EXE_TESTBENCHES), $(icdiff) <($(VVP) $(BIN_FOLDER)/$(file_in_bin)) $(TEST_FOLDER)/referencia.txt; echo "";)
-# $(icdiff) <($(VVP) $(BIN_FOLDER)/$(EXE_TESTBENCHES)) $(TEST_FOLDER)/$(REFERENCIA)
-# $(ICDIFF) $(TEST_FOLDER)/output.txt $(TEST_FOLDER)/referencia.txt
-
-
-# icdiff <(vvp bin/testbench_circuito_simp_mfd) tests/referencia.txt 
-
-
-# $(SOURCES_TXT): $(EXE_TESTBENCHES)
-# %.txt:% 
-# 	$(ICDIFF) <($(VVP) $(BIN_FOLDER)/$^) $(TEST_FOLDER)/$@
-
+# icdiff <(vvp bin/testbench_circuito_simp_mfd) tests/referencia.txt
 test: $(EXE_TESTBENCHES)
-	$(foreach file_in_bin, $(EXE_TESTBENCHES), $(ICDIFF) $(TEST_FOLDER)/$(file_in_bin:=_output.txt) $(TEST_FOLDER)/$(REFERENCIA); echo "";)
-
+# $(foreach file_in_bin, $(EXE_TESTBENCHES), $(ICDIFF) $(TEST_FOLDER)/$(file_in_bin:=_output.txt) $(TEST_FOLDER)/$(REFERENCIA); echo "";)
+# icdiff <(vvp bin/testbench_circuito_simp_mfd) tests/referencia.txt
+	$(foreach file_in_bin, $(EXE_TESTBENCHES), $(ICDIFF) <($(VVP) $(BIN_FOLDER)/$(file_in_bin)) $(TEST_FOLDER)/$(REFERENCIA); echo "";)
 
 clean:
 	rm -f $(BIN_FOLDER)/*
