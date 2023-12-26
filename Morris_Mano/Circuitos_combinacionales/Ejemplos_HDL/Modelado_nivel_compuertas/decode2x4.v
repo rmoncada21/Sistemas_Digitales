@@ -15,4 +15,4 @@ module decode2x4(A,B,E,D);
         n5 (D[1], Anot, B, Enot),
         n6 (D[2], A, Bnot, Enot),
         n7 (D[3], A, B, Enot);
-endmodule 
+endmodule

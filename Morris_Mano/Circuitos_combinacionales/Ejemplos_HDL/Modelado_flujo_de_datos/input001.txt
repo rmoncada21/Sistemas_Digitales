@@ -1,4 +1,0 @@
-select = 1 A = 0 B = 1 OUT = 0 time = 0
-select = 1 A = 1 B = 0 OUT = 1 time = 10
-select = 0 A = 1 B = 0 OUT = 0 time = 20
-select = 0 A = 0 B = 1 OUT = 1 time = 30

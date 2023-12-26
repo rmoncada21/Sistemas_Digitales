@@ -53,7 +53,7 @@ endmodule
 
 Un compilador de síntesis Verilog HDL puede aceptar como entrada esta descripción de módulo y producir la lista de un circuito equivalente a la figura.
 
-## Ejemplo 4.6 MUltiplexor 2x1
+## Ejemplo 4.6 MUltiplexor 2x1 (Modelado por flujo de datos)
 
 > assign OUT = select ? A : B;
 
@@ -71,7 +71,7 @@ module multiplexor2x1(A, B, select, OUT);
 endmodule
 ~~~
 
-## Ej 4.7 y 4.8 en la carpeta ""
+## Ej 4.7 y 4.8 en la carpeta "Modelado por comportamiento"
 
 ## Ejemplo 4.9 TESTBENCH
 Con este tesbench se prueba el circuito modulo mux2x1.v. 

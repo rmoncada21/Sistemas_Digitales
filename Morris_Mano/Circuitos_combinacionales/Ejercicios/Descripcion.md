@@ -26,3 +26,10 @@ cuatro entradas.
 ### Funciones simplificadas con propiedades del algebra booleana:
 - F = A'D + BC + ABC
 - G = A'D + BCD' +ABC
+
+
+## 4.3 Para el circuito de la figura
+- a) Escriba las funciones booleanas de las cuatro salidas en función de las variables de entrada.
+- b) Si el circuito se presenta como tabla de verdad, ¿cuántas filas y columnas tendría la tabla?
+
+![img](img/3.png)
