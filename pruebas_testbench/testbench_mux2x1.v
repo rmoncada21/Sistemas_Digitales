@@ -1,3 +1,6 @@
+
+`timescale 1ns/1ps
+
 module testbench_mux2x1;
     // entradas del mux
     reg [1:0] in_test;
@@ -31,7 +34,7 @@ module testbench_mux2x1;
         sel_test = $urandom_range(0, 1);
         $display("-------");
         $display("sel_test %b ", sel_test);
-
+        #10;
         // asignar las entradas input del mux
         poscision_random = $urandom_range(0, 3);
         in_test = values_in_test[poscision_random];
@@ -47,30 +50,36 @@ module testbench_mux2x1;
     endtask
 
     initial begin
-       gen_values_in_test;
-       repeat(11) begin
+        $dumpfile("testbench_mux2x1.vcd");
+        $dumpvars(0, testbench_mux2x1);
+        gen_values_in_test;
+        repeat(11) begin
             test_mux;
-       end
-       $finish;
+            #100;
+        end
+        $finish;
     end
 
     // Prueba manual
 
     // initial begin
-    //     in_test[0] = 0; in_test[1] = 0; sel_test = 0;
-    //     #10;
-    //     in_test[0] = 0; in_test[1] = 1; sel_test = 1;
-    //     #10;
-    //     in_test[0] = 1; in_test[1] = 0; sel_test = 1;
-    //     #10;
-    //     in_test[0] = 1; in_test[1] = 1; sel_test = 0;
+    //     $dumpfile("testbench_mux2x1.vcd");
+    //     $dumpvars(0, testbench_mux2x1);
 
+    //     in_test[0] = 0; in_test[1] = 0; sel_test = 0;
+    //     #100;
+    //     in_test[0] = 0; in_test[1] = 1; sel_test = 1;
+    //     #100;
+    //     in_test[0] = 1; in_test[1] = 0; sel_test = 1;
+    //     #100;
+    //     in_test[0] = 1; in_test[1] = 1; sel_test = 0;
+    //     #100;
     //     in_test[0] = 0; in_test[1] = 0; sel_test = 1;
-    //     #10;
+    //     #100;
     //     in_test[0] = 0; in_test[1] = 1; sel_test = 0;
-    //     #10;
+    //     #100;
     //     in_test[0] = 1; in_test[1] = 0; sel_test = 0;
-    //     #10;
+    //     #100;
     //     in_test[0] = 1; in_test[1] = 1; sel_test = 1;
     // end
     // initial
