@@ -1,3 +1,5 @@
+`timescale 1ns/1ps
+
 module testbench_mux2x1_mfd;
 
     // Entradas y salidas del testbench
@@ -28,16 +30,18 @@ module testbench_mux2x1_mfd;
     // Tarea para verficar los resultados
     task verficar_mux;
         reg [0:1] opcion_random;
+
         // Generar entradas del selector con la funcion random
         sel_tb = $urandom_range(0, 1);
         $display("-------");
         $display("sel_tb %b ", sel_tb);
+
         // Obtener las entradas del in_tes de formar random a partir del 
         // vector tipo matriz reg [0:1] in_test [0:3];
         opcion_random = $urandom_range(0, 3);
         in_tb = in_test[opcion_random];
+        #100;
         // Es importante darle tiempo al programa para que cargue los datos
-        #10;
         $display("in_tb %2b, Y = %b", in_tb, y_tb);
 
         // Parte de selección de errores
@@ -46,11 +50,12 @@ module testbench_mux2x1_mfd;
         end else begin
             $display("ERROR ");
         end
-
     endtask
 
     // Iniciar la ejecución, similar al main
     initial begin
+        $dumpfile("testbench_mux2x1_mfd.vcd");
+        $dumpvars(0, testbench_mux2x1_mfd);
         gen_values_in_tb;
         repeat(7) begin
             verficar_mux;
