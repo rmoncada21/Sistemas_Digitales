@@ -1,4 +1,4 @@
-module circuito_simp(A0, A1, A2, A3, B0, B1, B2, B3, S, E, Y0, Y1, Y2, Y3);
+module dos_multiplexores_4x1_2s_mnc(A0, A1, A2, A3, B0, B1, B2, B3, S, E, Y0, Y1, Y2, Y3);
     input A0, A1, A2, A3, B0, B1, B2, B3, S, E;
     output Y0, Y1, Y2, Y3;
     wire wA0, wA1, wA2, wA3, wB0, wB1, wB2, wB3, Snot, Enot;
@@ -22,7 +22,7 @@ module circuito_simp(A0, A1, A2, A3, B0, B1, B2, B3, S, E, Y0, Y1, Y2, Y3);
         and_b3 (wB3, B3, S, Enot);
     or 
         or_Y0 (Y0, wA0, wB0),
-        or_Y1 (Y0, wA1, wB1),
-        or_Y2 (Y0, wA2, wB2),
-        or_Y3 (Y0, wA3, wB3);
-endmodule 
+        or_Y1 (Y1, wA1, wB1),
+        or_Y2 (Y2, wA2, wB2),
+        or_Y3 (Y3, wA3, wB3);
+endmodule

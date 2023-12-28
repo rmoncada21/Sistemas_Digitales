@@ -31,7 +31,7 @@ $(EXE_MODULES): $(MODULES)
 $(EXE_TESTBENCHES): $(MODULE_FROM_TESTBENCH)
 %:%.v
 	$(IVE) $(VFLAGS) $(VERSION) $(VFLAGS) -o $(BIN_FOLDER)/$@ $^
-
+	$(VVP) $(BIN_FOLDER)/$@
 run: runm runt
 
 runt: $(EXE_TESTBENCHES)
