@@ -33,3 +33,11 @@ cuatro entradas.
 - b) Si el circuito se presenta como tabla de verdad, ¿cuántas filas y columnas tendría la tabla?
 
 ![img](img/3.png)
+
+## 4.4 Diseño
+Diseñar un circuito combinacional con tres entradas y una salida. La salida es 1 cuando el valor binario de las entradas es menos que 3, y es 0 en los demás casos.
+
+![img](img/4.png)
+
+## 4.5 Diseño
+Diseñe un circuito combinacional con tres entradas, x, y y z, y tres salidas, A, B y C. Cuando la entrada binaria es 0, 1, 2 o 3, la salida binaria es uno más que la entrada. Si la entrada binaria es 4, 5, 6 o 7, la salida binaria es uno menos que la entrada.
