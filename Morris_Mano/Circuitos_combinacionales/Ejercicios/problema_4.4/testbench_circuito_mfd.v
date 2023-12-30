@@ -41,7 +41,7 @@ module testbench_circuito_less3b;
         #1;
         $display("---");
         $display("Valores de input ABC y salida ");
-        $display("A  B  C  |  Y");
+        $display("A  B  C  |  F");
         $display("%b  %b  %b  |  %b", ABC_tb[2], ABC_tb[1], ABC_tb[0], F_tb);
     endtask
 
@@ -57,7 +57,6 @@ module testbench_circuito_less3b;
 
     initial begin
         gen_values;
-        
         repeat(10) begin 
             put_values;
             verify_circuit;
