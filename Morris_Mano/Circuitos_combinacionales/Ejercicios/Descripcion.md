@@ -48,3 +48,10 @@ Circuito diseñado
 
 Circuito diseñado CORREGIDO
 ![img](img/5_corregido.png)
+
+## 4.6 Diseño Circuito Mayoria 
+Un circuito de mayoría es un circuito combinacional cuya salida es 1 si las variables de entrada
+tienen más unos que ceros. La salida es 0 en caso contrario. Diseñe un circuito de mayoría de tres
+entradas.
+
+![img](img/6.png)
