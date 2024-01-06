@@ -81,3 +81,18 @@ Un decodificador de BCD a siete segmentos es un circuito combinacional que convi
 
 ![img](img/9_figura.png)
 ![img](img/9_circuito.png)
+
+## 4.10 Complemento a 2
+Diseñe un circuito combinacional complementador a dos, de cuatro bits. (La salida genera el complemento a dos del número binario de entrada.) Demuestre que es posible construir el circuito con compuertas OR exclusivo.
+
+![img](img/10.png)
+
+## 4-11 Incrementador de cuatro bits
+Diseñar un circuito combinacional incrementador de cuatro bits. (Un circuito que suma 1 a un número binario de cuatro bits.) El circuito puede diseñarse con cuatro semisumadores.
+
+
+## 4-12 Circuito Restador
+a) Diseñe un circuito semirrestador con entradas x y y, y salidas D y B. El circuito resta los bits
+x-y, y coloca la diferencia en D y el préstamo (borrow) en B.
+b) Diseñe un circuito restador completo con tres entradas, x, y y z, y dos salidas, D y B. El circuito resta x-y-z, donde z es el préstamo de entrada, B es el préstamo de salida y D es
+la diferencia.
