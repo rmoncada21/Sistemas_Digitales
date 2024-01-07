@@ -90,6 +90,7 @@ Diseñe un circuito combinacional complementador a dos, de cuatro bits. (La sali
 ## 4-11 Incrementador de cuatro bits
 Diseñar un circuito combinacional incrementador de cuatro bits. (Un circuito que suma 1 a un número binario de cuatro bits.) El circuito puede diseñarse con cuatro semisumadores.
 
+![img](img/11_sumador.png)
 
 ## 4-12 Circuito Restador
 a) Diseñe un circuito semirrestador con entradas x y y, y salidas D y B. El circuito resta los bits

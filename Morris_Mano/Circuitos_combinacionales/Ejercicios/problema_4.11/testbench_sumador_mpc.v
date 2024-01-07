@@ -69,7 +69,6 @@ module testbench_sumador_mpc;
     end
 endmodule
 
-
         // 4'b0001: 4'b0010
         // 4'b0010: 4'b0011
         // 4'b0011: 4'b0100
