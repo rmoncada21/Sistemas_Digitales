@@ -107,8 +107,9 @@ la diferencia.
 
 Construya un circuito sumador-restador BCD. Utilice el sumador BCD de la figura 4-14 y el complementador a nueve del problema 4-18. Utilice diagramas de bloque para los componentes.
 
-- a) Circuito Sumador
-![img](img/19_sumador_4bits)
+- a) Circuito Sumador (Del dej ercicio 4.11)
+![img](img/11_sumador.png   )
+![img](img/11_sumador_4bits.png)
 
 - b) Circuito Sumador BCD
 ![img](img/19_sumador_BCD_4bits.png)
