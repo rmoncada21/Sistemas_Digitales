@@ -28,7 +28,8 @@ $(EXE_MODULES): $(MODULES)
 	$(IVE) $(VFLAGS) $(VERSION) -o $(BIN_FOLDER)/$@ $^
 
 # funciona para compilar las dependercias del testbench lllllllllllll
-$(EXE_TESTBENCHES): $(MODULE_FROM_TESTBENCH)
+# $(EXE_TESTBENCHES): $(MODULE_FROM_TESTBENCH)
+$(EXE_TESTBENCHES): $(MODULES)
 %:%.v
 	$(IVE) $(VFLAGS) $(VERSION) $(VFLAGS) -o $(BIN_FOLDER)/$@ $^
 	$(VVP) $(BIN_FOLDER)/$@
