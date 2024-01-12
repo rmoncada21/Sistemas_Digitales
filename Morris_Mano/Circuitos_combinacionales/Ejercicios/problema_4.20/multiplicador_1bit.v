@@ -1,7 +1,7 @@
 module multiplicador_1bit(
     output reg [3:0] F,
-    input select,
-    input reg [3:0] In
+    input reg [3:0] In,
+    input select
 );
 
     // Modelado por nivel de compuertas

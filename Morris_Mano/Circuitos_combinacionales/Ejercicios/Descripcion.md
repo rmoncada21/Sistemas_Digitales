@@ -134,7 +134,7 @@ Dividido en dos (Ver cual se ve mejor)
 Diseñe un multiplicador binario que multiplique dos números de cuatro bits. Utilice compuertas AND y sumadores binarios.
 
 ![img](img/20_multiplicador_4x1bit.png)
-![img](img/20_bloque_multiplicador.png)
+![img](img/20_bloque_multiplicador_4x1bit.png)
 
 ![img](img/20_multiplicador_parte1.png)
 ![img](img/20_multiplicador_parte2.png)
