@@ -1,5 +1,5 @@
 # Diseño Lógico - VerilogHDL
-Ejercicios y práctica de Verilog HDL basados en el libro de **Diseño Lógico de Morris Mano**
+Ejercicios y práctica de Verilog HDL basados en el libro de **Diseño Digital de Morris Mano**
 
 Estructura común en un proyecto de sistemas digitales:
 ~~~

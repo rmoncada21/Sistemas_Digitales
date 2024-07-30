@@ -1,0 +1,1 @@
+# Conceptos y ejemplos de Verilog obtenidos del libro Verilog HDL: Guide to Digital Design
