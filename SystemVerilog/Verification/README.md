@@ -1,1 +1,0 @@
-# Conceptos y ejemplos de SystemVerilog obtenidos del libro SystemVerilog for verification: A guide to learning the testbench language features 2ed - Chris Spear
