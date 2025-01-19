@@ -1,5 +1,6 @@
 *.vcd
 bin/
+gtkwave/
 test/
 test.txt
 *.out
