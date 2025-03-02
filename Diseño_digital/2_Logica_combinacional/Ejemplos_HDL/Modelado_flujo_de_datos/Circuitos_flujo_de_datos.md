@@ -5,7 +5,7 @@
 ![Imagen](img/operadores_basicos.png)
 
 
-## Ejemplo HDL 4.3 Deccode 2x4 
+## Circuito HDL 4.3 Deccode 2x4 
 ![Imagen](img/decode2x4.png)
 
 ~~~ verilog
@@ -29,7 +29,7 @@ Es un tipo de datos *net* que se utiliza para representar un aconexión fisica e
 
 Una net define una salida de compuerta declarada por un enunciado output o wire.
 
-## Ejemplo HDL 4.5 Comparador de magnitud de bits  
+## Circuito HDL 4.5 Comparador de magnitud de bits  
 
 ~~~ verilog
 // Descripción de flujo de datos de un comparador de 4 bits
@@ -53,7 +53,7 @@ endmodule
 
 Un compilador de síntesis Verilog HDL puede aceptar como entrada esta descripción de módulo y producir la lista de un circuito equivalente a la figura.
 
-## Ejemplo 4.6 MUltiplexor 2x1 (Modelado por flujo de datos)
+## Circuito 4.6 MUltiplexor 2x1 (Modelado por flujo de datos)
 
 > assign OUT = select ? A : B;
 
@@ -73,7 +73,7 @@ endmodule
 
 ## Ej 4.7 y 4.8 en la carpeta "Modelado por comportamiento"
 
-## Ejemplo 4.9 TESTBENCH
+## Circuito 4.9 TESTBENCH
 Con este tesbench se prueba el circuito modulo mux2x1.v. 
 
 ~~~Verilog

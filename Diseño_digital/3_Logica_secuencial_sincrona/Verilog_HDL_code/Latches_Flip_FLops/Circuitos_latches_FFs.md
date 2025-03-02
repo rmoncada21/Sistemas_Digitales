@@ -1,21 +1,21 @@
 # Circuitos Secuenciales/ Latches y Flips Flops
 
 ## Latches 
-### Ejemplo 5.1: Latch D con entrada de control síncrona
+### Circuito 5.1: Latch D con entrada de control síncrona
 ![img](../img/latch_D_con_control.png)
 
 ### Latch JK - Latch T
 
 ## Flip Flops
 
-### Ejemplo 5.2 FFD (flanco positivo) y FFD con reset asíncrono
+### Circuito 5.2 FFD (flanco positivo) y FFD con reset asíncrono
 ![img](../img/FFD_posedge_negedge.png)
 
-### Ejemplo 5.3 FFT-FFJK usando FFD y compuertas
+### Circuito 5.3 FFT-FFJK usando FFD y compuertas
 >Nota: Notar el uso diverso de las expresiones usadas para implmentar la lógica combinacional
 
 ~~~v
-// Ejemplo 5.3 b)
+// Circuito 5.3 b)
 `include "FFD_reset_async.v"
 
 module FFJK( 
@@ -68,12 +68,12 @@ Evaluación de expresiones en Verilog:
 - b) FFJK usando FFD y compuertas
 ![img](../img/FFT_usandoFFD.png)
 
-### Ejemplo 5.4 FFJK por modelado funcional
+### Circuito 5.4 FFJK por modelado funcional
 
 
 ## Máquina de estados
 
-### Ejemplo 5.5 Maquina de estados
+### Circuito 5.5 Maquina de estados
 
 - a) 
 ![img](../img/Maquina_estados_1.png)

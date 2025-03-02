@@ -7,7 +7,7 @@ Se le utiliza primordialmente para **describir circuitos secuenciales**, pero si
 - La salida deben ser del tipo de datos **reg**
     La diferencia entre wire y reg es que este ultimo conserva su valor hasta que se le asigna otro.
 
-## Ejemplo 4.7 Mutiplexor 2 a 1 (Diagrama de bloque)
+## Circuito 4.7 Mutiplexor 2 a 1 (Diagrama de bloque)
 
 ![img](img/mux2x1.png)
 
@@ -32,7 +32,7 @@ El ejemplo muestra la descripción de comportamiento de un multiplexor de 2 lín
 > if (select) OUT = A;
 - Se examina select para ver si es un 1 lógico. 
 
-## Ejemplo 4.8 Mux 4x1
+## Circuito 4.8 Mux 4x1
 
 ![img](img/mux4x1.png)
 
