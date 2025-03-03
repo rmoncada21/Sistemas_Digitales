@@ -4,8 +4,9 @@ module FFD_reset_async(
 );
 
     // lógica secuencial
-    always @(posedge clk or reset_async)begin
-        // si reset_async == 1
+    // Flip flop con reset activo en alto 1 
+    always @(posedge clk or posedge reset_async)begin
+        // borra memoria cuando reset = 1
         if(reset_async) q<=0;
         else q<=d;
     end
