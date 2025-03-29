@@ -17,3 +17,24 @@
 > Shift_reg_4bits
 
 ![alt text](img/3_shift_reg4bits.png)
+
+
+## Circuito 4. Sumador completo usando registros de desplazamientos y FFD
+
+> Sumador_completo_usando_registros
+
+![alt text](img/4_sumador_completo_con_registros_FFD.png)
+
+
+<!-- ## Circuito 4. Sumador completo usando registros de desplazamientos y FFJK
+
+> Sumador_completo_usando_registros
+
+![alt text](img/4_sumador_completo_con_registros_FFJK.png) -->
+
+
+<!-- ## Circuito 5. Registro de desplazamiento Universal 
+
+> Univeral_shift_Reg_with_FFD_n_mux
+
+![alt text](img/5_registro_universal.png) -->
